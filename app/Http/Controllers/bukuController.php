@@ -14,7 +14,7 @@ class bukuController extends Controller
     public function proses(Request $request)
     {
         $this->validate($request,[
-           'id' => 'required|numeric',
+           'id' => 'required',
            'judul' => 'required',
            'penerbit' => 'required',
            'tahun_terbit'=>'required|numeric',

@@ -19,7 +19,11 @@
 
                         <table class="table table-bordered table-striped">
                             <tr>
-                                <td style="width:150px">Judul</td>
+                                <td style="width:150px">id</td>
+                                <td>{{ $data->id }}</td>
+                            </tr>
+                            <tr>
+                                <td>Judul</td>
                                 <td>{{ $data->judul }}</td>
                             </tr>
                             <tr>

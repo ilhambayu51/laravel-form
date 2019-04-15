@@ -51,7 +51,7 @@
                                     <label for="tahun_terbit">Tahun Terbit</label>
                                     <input class="form-control" type="text" name="tahun_terbit" value="{{ old('tahun_terbit') }}">
                                 </div><div class="form-group">
-                                    <label for="pengarang"> Pengarang</label>
+                                    <label for="pengarang">Pengarang</label>
                                     <input class="form-control" type="text" name="pengarang" value="{{ old('pengarang') }}">
                                 </div>
                                 <div class="form-group">
