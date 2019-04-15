@@ -14,7 +14,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="card mt-5">
-                    <div class="card-body">
+                    <div class="card-body">git 
                         <h3 class="my-4">Data Yang Di Input : </h3>
 
                         <table class="table table-bordered table-striped">
