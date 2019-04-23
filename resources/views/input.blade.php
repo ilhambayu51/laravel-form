@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Form Validasi Laravel</title>
+    <title>Perpustakaan</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -31,7 +31,6 @@
                             @endif
 
                             <br/>
-                             <!-- form validasi -->
                             <form action="/proses" method="post">
                                 {{ csrf_field() }}
 
@@ -58,12 +57,10 @@
                                     <input class="btn btn-primary" type="submit" value="Proses">
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   
-</body>
+    </body>
 </html>
