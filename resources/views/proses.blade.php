@@ -5,47 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Membuat Form Validasi Pada Laravel</title>
-    
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 </head>
+    <body>
+        <h3>Form Peminjaman Buku : </h3>
+        <a href="/input"> +input data baru </a>
+        <h3></h3>
+            <table border="1">
+                <tr>
+                <th>id</th>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="card mt-5">
-                    <div class="card-body">git 
-                        <h3 class="my-4">Data Yang Di Input : </h3>
+                <th>Judul</th>
+                
+                <th>Penerbit</th>
+                
+                <th>Tahun Terbit</th>
 
-                        <table class="table table-bordered table-striped">
-                            <tr>
-                                <td style="width:150px">id</td>
-                                <td>{{ $data->id }}</td>
-                            </tr>
-                            <tr>
-                                <td>Judul</td>
-                                <td>{{ $data->judul }}</td>
-                            </tr>
-                            <tr>
-                                <td>Penerbit</td>
-                                <td>{{ $data->penerbit }}</td>
-                            </tr>
-                            <tr>
-                                <td>Tahun Terbit</td>
-                                <td>{{ $data->tahun_terbit }}</td>
-                            </tr>
-                            <tr>
-                                <td>Pengarang</td>
-                                <td>{{ $data->pengarang }}</td>
-                            </tr>
-                        </table>
+                <th>Pengarang</th>
+                <th></th>
+                </tr>
+                <tr>
+                <td>{{ $data->id }}</td>
+         
+                <td>{{ $data->judul }}</td>
+               
+                <td>{{ $data->penerbit }}</td>
+            
+                <td>{{ $data->tahun_terbit }}</td>
 
-                        <a href="/input" class="btn btn-primary">Kembali</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                <td>{{ $data->pengarang }}</td>
 
-</body>
+                <td>
+                <a href="/edit{{ $data->id }}">Edit</a>
+				
+				<a href="/hapus{{ $data->id }}">Hapus</a>
+                </td>
+           </tr>
+        </table><br/>
+        <a href="/input" class="btn btn-primary">Kembali</a>
+    </body>
 </html>

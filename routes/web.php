@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/input', 'bukuController@input');
- 
-Route::post('/proses', 'bukuController@proses');
+Route::get('/input', 'bukuController@perpus');
+Route::get('/tambah','bukuController@tambah');
+Route::get('/input/edit', 'bukuController@perpus');
+Route::get('/input/hapus/{id}','bukuController@hapus');
+Route::post('/input/store','bukuController@store');
