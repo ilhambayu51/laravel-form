@@ -7,7 +7,7 @@
  
 	<h3>Daftar Buku Perpustakaan</h3>
  
-	<a href="/tambah"> + Tambah Pegawai Baru</a>
+	<a href="/tambah"> + Tambah Buku Baru</a>
 	
 	<br/>
 	<br/>
