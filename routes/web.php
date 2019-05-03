@@ -13,6 +13,7 @@
 
 Route::get('/input', 'bukuController@perpus');
 Route::get('/tambah','bukuController@tambah');
-Route::get('/input/edit', 'bukuController@perpus');
+Route::get('/input/edit/{id}', 'bukuController@edit');
 Route::get('/input/hapus/{id}','bukuController@hapus');
 Route::post('/input/store','bukuController@store');
+Route::post('/input/update','bukuController@update');
